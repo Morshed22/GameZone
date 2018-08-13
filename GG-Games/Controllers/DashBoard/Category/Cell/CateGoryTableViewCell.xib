@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CateGoryTableViewCell" id="KGk-i7-Jjw" customClass="CateGoryTableViewCell" customModule="GG_Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bI6-Md-5NW">
+                        <rect key="frame" x="5" y="5" width="33.5" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bI6-Md-5NW" secondAttribute="height" multiplier="1:1" id="e7q-ko-Pfe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPd-hk-J2b">
+                        <rect key="frame" x="68.5" y="5" width="245.5" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bI6-Md-5NW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Gru-oA-HKW"/>
+                    <constraint firstItem="bI6-Md-5NW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="PCV-dE-hri"/>
+                    <constraint firstItem="WPd-hk-J2b" firstAttribute="bottom" secondItem="bI6-Md-5NW" secondAttribute="bottom" id="ZJd-oN-Gsk"/>
+                    <constraint firstItem="WPd-hk-J2b" firstAttribute="leading" secondItem="bI6-Md-5NW" secondAttribute="trailing" constant="30" id="jPr-Li-yRm"/>
+                    <constraint firstItem="WPd-hk-J2b" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="kfT-fj-BGJ"/>
+                    <constraint firstItem="WPd-hk-J2b" firstAttribute="top" secondItem="bI6-Md-5NW" secondAttribute="top" id="phG-jo-Fjj"/>
+                    <constraint firstAttribute="bottom" secondItem="bI6-Md-5NW" secondAttribute="bottom" constant="5" id="znq-2i-IOc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="gameImageView" destination="bI6-Md-5NW" id="KX9-J1-GPV"/>
+                <outlet property="gameTitle" destination="WPd-hk-J2b" id="nni-Qu-bUc"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="-67"/>
+        </tableViewCell>
+    </objects>
+</document>

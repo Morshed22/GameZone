@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamePopUpVC" customModule="GG_Games" customModuleProvider="target">
+            <connections>
+                <outlet property="coinLabel" destination="B7e-uH-Jbd" id="032-IA-zEh"/>
+                <outlet property="freePlayBtn" destination="Td6-35-rMe" id="uWe-Gz-bvC"/>
+                <outlet property="gameImageView" destination="hsB-5h-kDm" id="e37-0t-eIM"/>
+                <outlet property="playWithCreditBtn" destination="Riu-a3-x4l" id="c00-zu-Vwz"/>
+                <outlet property="view" destination="9d8-1H-Xff" id="Mf2-rI-pqd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9d8-1H-Xff">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bubble1" translatesAutoresizingMaskIntoConstraints="NO" id="hsB-5h-kDm">
+                    <rect key="frame" x="0.0" y="37" width="244" height="105.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="100" id="Y41-7e-tdI"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVs-a9-5s0">
+                    <rect key="frame" x="0.0" y="0.0" width="244" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-uH-Jbd">
+                            <rect key="frame" x="225" y="7.5" width="11" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="rmK-o0-5qZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kem-CQ-2Y1">
+                            <rect key="frame" x="163" y="7" width="46" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="OIR-re-sIa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="B7e-uH-Jbd" secondAttribute="trailing" constant="8" id="6fP-UD-6x5"/>
+                        <constraint firstItem="B7e-uH-Jbd" firstAttribute="leading" secondItem="Kem-CQ-2Y1" secondAttribute="trailing" constant="16" id="FRa-ON-EVq"/>
+                        <constraint firstItem="B7e-uH-Jbd" firstAttribute="centerY" secondItem="JVs-a9-5s0" secondAttribute="centerY" id="b9k-rz-WTl"/>
+                        <constraint firstItem="Kem-CQ-2Y1" firstAttribute="centerY" secondItem="JVs-a9-5s0" secondAttribute="centerY" id="rDL-fk-8yC"/>
+                        <constraint firstAttribute="height" constant="35" id="slY-se-wln"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-35-rMe">
+                    <rect key="frame" x="0.0" y="143.5" width="244" height="50"/>
+                    <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="aqK-qY-hS3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Riu-a3-x4l">
+                    <rect key="frame" x="0.0" y="195.5" width="244" height="50.5"/>
+                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JVs-a9-5s0" firstAttribute="leading" secondItem="G2F-JQ-iv8" secondAttribute="leading" id="3tm-tb-TSl"/>
+                <constraint firstItem="Riu-a3-x4l" firstAttribute="top" secondItem="Td6-35-rMe" secondAttribute="bottom" constant="2" id="6pc-8s-ALw"/>
+                <constraint firstItem="G2F-JQ-iv8" firstAttribute="bottom" secondItem="Riu-a3-x4l" secondAttribute="bottom" constant="2" id="Als-aA-Q1L"/>
+                <constraint firstAttribute="trailing" secondItem="Riu-a3-x4l" secondAttribute="trailing" id="CAP-cz-2lY"/>
+                <constraint firstItem="hsB-5h-kDm" firstAttribute="trailing" secondItem="G2F-JQ-iv8" secondAttribute="trailing" id="KYn-wB-scF"/>
+                <constraint firstItem="Riu-a3-x4l" firstAttribute="height" secondItem="Td6-35-rMe" secondAttribute="height" id="QVD-Cb-syc"/>
+                <constraint firstItem="JVs-a9-5s0" firstAttribute="trailing" secondItem="G2F-JQ-iv8" secondAttribute="trailing" id="SAq-Pq-PKG"/>
+                <constraint firstItem="hsB-5h-kDm" firstAttribute="leading" secondItem="G2F-JQ-iv8" secondAttribute="leading" id="Tma-zl-n7q"/>
+                <constraint firstItem="Td6-35-rMe" firstAttribute="top" secondItem="hsB-5h-kDm" secondAttribute="bottom" constant="1" id="Uo0-Uy-NP6"/>
+                <constraint firstItem="JVs-a9-5s0" firstAttribute="top" secondItem="G2F-JQ-iv8" secondAttribute="top" id="ZP3-uV-Ih9"/>
+                <constraint firstItem="Td6-35-rMe" firstAttribute="leading" secondItem="G2F-JQ-iv8" secondAttribute="leading" id="nU8-Ra-XpX"/>
+                <constraint firstItem="Riu-a3-x4l" firstAttribute="leading" secondItem="G2F-JQ-iv8" secondAttribute="leading" id="vUl-6f-Vbx"/>
+                <constraint firstItem="Td6-35-rMe" firstAttribute="trailing" secondItem="G2F-JQ-iv8" secondAttribute="trailing" id="xlA-Fg-cgA"/>
+                <constraint firstItem="hsB-5h-kDm" firstAttribute="top" secondItem="JVs-a9-5s0" secondAttribute="bottom" constant="2" id="zBO-ya-8BW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="G2F-JQ-iv8"/>
+            <point key="canvasLocation" x="-62" y="-348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bubble1" width="345" height="200"/>
+    </resources>
+</document>
